@@ -1,9 +1,9 @@
-package com.example.spring3.services;
+package com.example.spring3.caloriesCalculator.services;
 
-import com.example.spring3.dtos.request.IngredientDTO;
-import com.example.spring3.dtos.request.PlateDTO;
-import com.example.spring3.dtos.response.PlateResponseDTO;
-import com.example.spring3.respositories.CalculatorCalorieRepository;
+import com.example.spring3.caloriesCalculator.dtos.request.IngredientDTO;
+import com.example.spring3.caloriesCalculator.dtos.request.PlateDTO;
+import com.example.spring3.caloriesCalculator.dtos.response.PlateResponseDTO;
+import com.example.spring3.caloriesCalculator.respositories.CalculatorCalorieRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -13,6 +13,10 @@ import java.util.List;
 public class CalculatorCalorieServiceImpl implements CalculatorCalorieService{
 
     CalculatorCalorieRepository calculatorCalorieRepository;
+
+    public CalculatorCalorieServiceImpl(CalculatorCalorieRepository calculatorCalorieRepository) {
+        this.calculatorCalorieRepository = calculatorCalorieRepository;
+    }
 
     @Override
     public PlateResponseDTO calculate(PlateDTO plate) {
@@ -27,10 +31,6 @@ public class CalculatorCalorieServiceImpl implements CalculatorCalorieService{
                 moreCalories(plate)
                 );
         return response;
-    }
-
-    public CalculatorCalorieServiceImpl(CalculatorCalorieRepository calculatorCalorieRepository) {
-        this.calculatorCalorieRepository = calculatorCalorieRepository;
     }
 
     public double calculateCaloriesPlate(PlateDTO plate) {

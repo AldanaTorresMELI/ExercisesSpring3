@@ -1,6 +1,6 @@
-package com.example.spring3.respositories;
+package com.example.spring3.caloriesCalculator.respositories;
 
-import com.example.spring3.dtos.request.IngredientDTO;
+import com.example.spring3.caloriesCalculator.dtos.request.IngredientDTO;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Repository;

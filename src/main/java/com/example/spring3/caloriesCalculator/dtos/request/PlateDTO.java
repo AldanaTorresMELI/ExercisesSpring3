@@ -1,4 +1,4 @@
-package com.example.spring3.dtos.request;
+package com.example.spring3.caloriesCalculator.dtos.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,8 +1,8 @@
-package com.example.spring3.controllers;
+package com.example.spring3.caloriesCalculator.controllers;
 
-import com.example.spring3.dtos.request.PlateDTO;
-import com.example.spring3.dtos.response.PlateResponseDTO;
-import com.example.spring3.services.CalculatorCalorieService;
+import com.example.spring3.caloriesCalculator.dtos.request.PlateDTO;
+import com.example.spring3.caloriesCalculator.dtos.response.PlateResponseDTO;
+import com.example.spring3.caloriesCalculator.services.CalculatorCalorieService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

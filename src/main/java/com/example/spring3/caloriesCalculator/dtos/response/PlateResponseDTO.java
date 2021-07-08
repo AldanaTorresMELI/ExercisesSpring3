@@ -1,6 +1,6 @@
-package com.example.spring3.dtos.response;
+package com.example.spring3.caloriesCalculator.dtos.response;
 
-import com.example.spring3.dtos.request.IngredientDTO;
+import com.example.spring3.caloriesCalculator.dtos.request.IngredientDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 

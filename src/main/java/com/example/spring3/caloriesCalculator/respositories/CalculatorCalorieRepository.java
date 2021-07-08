@@ -1,10 +1,6 @@
-package com.example.spring3.respositories;
+package com.example.spring3.caloriesCalculator.respositories;
+import com.example.spring3.caloriesCalculator.dtos.request.IngredientDTO;
 
-import com.example.spring3.dtos.request.IngredientDTO;
-import org.springframework.util.ResourceUtils;
-
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.List;
 
 public interface CalculatorCalorieRepository {
